@@ -963,6 +963,13 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
+"@iota/bcs@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@iota/bcs/-/bcs-0.2.1.tgz#96dbcdaacb9003f5e44a5026bf0efad28e445bd8"
+  integrity sha512-T+iv5gZhUZP7BiDY7+Ir4MA2rYmyGNZA2b+nxjv219Fp8klFt+l38OWA+1RgJXrCmzuZ+M4hbMAeHhHziURX6Q==
+  dependencies:
+    bs58 "^6.0.0"
+
 "@iota/bcs@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@iota/bcs/-/bcs-1.0.0.tgz#68fc58339baf7754fda9993145c09090587cfbf3"
@@ -977,6 +984,24 @@
   dependencies:
     "@graphql-typed-document-node/core" "^3.2.0"
     "@iota/bcs" "1.0.0"
+    "@noble/curves" "^1.4.2"
+    "@noble/hashes" "^1.4.0"
+    "@scure/bip32" "^1.4.0"
+    "@scure/bip39" "^1.3.0"
+    "@suchipi/femver" "^1.0.0"
+    bech32 "^2.0.0"
+    gql.tada "^1.8.2"
+    graphql "^16.9.0"
+    tweetnacl "^1.0.3"
+    valibot "^0.36.0"
+
+"@iota/iota-sdk@^0.6.0":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@iota/iota-sdk/-/iota-sdk-0.6.0.tgz#866f3fa7a512ce88d634eda2811cf8f13db5db2f"
+  integrity sha512-NEYiE7bdWw2DA3vLV7dO2EnoLDljN9NPhYrjfDGefTbIS9XpqX0JZTHMi//Q/K0aO4NwSHR5gu7n/ywoOTzTKg==
+  dependencies:
+    "@graphql-typed-document-node/core" "^3.2.0"
+    "@iota/bcs" "0.2.1"
     "@noble/curves" "^1.4.2"
     "@noble/hashes" "^1.4.0"
     "@scure/bip32" "^1.4.0"
@@ -1942,6 +1967,13 @@
   resolved "https://registry.yarnpkg.com/@types/stack-utils/-/stack-utils-2.0.3.tgz#6209321eb2c1712a7e7466422b8cb1fc0d9dd5d8"
   integrity sha512-9aEbYZ3TbYMznPdcdr3SmIrLXwC/AKZXQeCf9Pgao5CKb8CyHuEX5jzWPTkvregvhRJHcpRO6BFoGW9ycaOkYw==
 
+"@types/superstruct@^0.8.2":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@types/superstruct/-/superstruct-0.8.2.tgz#60c7d52e0b7a4c7cc819d1f0a43b36c1d56f0bd4"
+  integrity sha512-iM57MTPOXVkLwvo5Md6X5YhAszcJmuLlO6u5Z+JGzxTQ/3uHoZTKdWhjs408QJ27+NphS3kPgSSbqJWBSPsegg==
+  dependencies:
+    superstruct "*"
+
 "@types/yargs-parser@*":
   version "21.0.3"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-21.0.3.tgz#815e30b786d2e8f0dcd85fd5bcf5e1a04d008f15"
@@ -2042,6 +2074,14 @@
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
+
+"@virtue/sdk@https://github.com/Virtue-CDP/virtue-sdk.git#58e12447abefa3bd47d480e5f00d0a23612d800d":
+  version "0.0.1"
+  resolved "https://github.com/Virtue-CDP/virtue-sdk.git#58e12447abefa3bd47d480e5f00d0a23612d800d"
+  dependencies:
+    "@iota/iota-sdk" "^0.6.0"
+    "@types/superstruct" "^0.8.2"
+    superstruct "^1.0.3"
 
 "@wallet-standard/app@^1.0.1":
   version "1.0.1"
@@ -5086,6 +5126,16 @@ sucrase@^3.20.3:
     mz "^2.7.0"
     pirates "^4.0.1"
     ts-interface-checker "^0.1.9"
+
+superstruct@*:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/superstruct/-/superstruct-2.0.2.tgz#3f6d32fbdc11c357deff127d591a39b996300c54"
+  integrity sha512-uV+TFRZdXsqXTL2pRvujROjdZQ4RAlBUS5BTh9IGm+jTqQntYThciG/qu57Gs69yjnVUSqdxF9YLmSnpupBW9A==
+
+superstruct@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/superstruct/-/superstruct-1.0.4.tgz#0adb99a7578bd2f1c526220da6571b2d485d91ca"
+  integrity sha512-7JpaAoX2NGyoFlI9NBh66BQXGONc+uE+MRS5i2iOBKuS4e+ccgMDjATgZldkah+33DakBxDHiss9kvUcGAO8UQ==
 
 supports-color@^5.3.0:
   version "5.5.0"
